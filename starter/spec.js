@@ -40,8 +40,7 @@ describe('ADF Demo App', function() {
 			  els.getText().then(function (text) {
 			    console.log(index, text);
 			    if(text[index] === "aradhana") {
-			     console.log(index +"a");    	
-		    	 console.log("ganpati bappa morya");
+		    	 console.log("Found the matching row to delete");
 		    	 element(by.id("action_menu_right_" + index)).click();
 		    	 element(by.cssContainingText("button.mat-menu-item", "Delete")).click();
 			   } else {
